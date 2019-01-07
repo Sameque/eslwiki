@@ -1,7 +1,7 @@
 <!-- TITLE: Home -->
 <!-- SUBTITLE: Documentação referente a o sistema ESL e seus processos. -->
 
-# Modulo EDI
+# [Blog do Da2k](https://eslwiki.herokuapp.com/edi#ed)
 ## [href="https://eslwiki.herokuapp.com/edi#edi"] Modulo EDI</a>
 <a href="https://eslwiki.herokuapp.com/edi#edi">Modulo EDI</a>
 
