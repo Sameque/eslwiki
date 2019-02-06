@@ -26,7 +26,7 @@ O cliente fatura os fretes gravados no sistema e gerando um título, imprime o b
 
 ### Movimentos
 
-![Minuta Gerada](/uploads/minuta-gerada.jpg "Minuta Gerada")
+![Minuta Gerada](/uploads/minuta-gerada.jpg "Minuta Gerada") ![Minuta Gerada 01](/uploads/minuta-gerada-01.jpg "Minuta Gerada 01")
 			
 ## Manual
 		Digitação Manual de titulos
