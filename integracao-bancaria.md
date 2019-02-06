@@ -1,6 +1,9 @@
 <!-- TITLE: Integração Bancária -->
 <!-- SUBTITLE: Integração Bancária a Pagar -->
 
+1. Origem
+2. Processamento
+3. Saida
 # Origem
 ## Automática
 ### Movimentos
@@ -8,14 +11,6 @@
 			overviewo geração Movimetno
 			Geração de Titulos.
 			
-			
-1. teste
-1.2 teste2
-1..3
-2. teste
-1. teste
-1. teste
-
 ## Manual
 		Digitação Manual de titulos
 
