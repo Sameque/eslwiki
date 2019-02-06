@@ -5,6 +5,8 @@
 	1. Automática
 	2. Manual
 2. Processamento
+	1. Gerar Boleto
+	2. Gerar Arquivo
 3. Saida
 # Origem
 ## Automática
