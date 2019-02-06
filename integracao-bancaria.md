@@ -8,6 +8,8 @@
 	1. Gerar Boleto
 	2. Gerar Arquivo
 3. Saida
+	4. Boleto
+	5. Arquivo
 # Origem
 ## Automática
 ### Movimentos
