@@ -22,7 +22,9 @@ Os títulos podem ter origem pelo processo automático de faturamento de movimen
 
 # Origem
 ## Automática
-	O cliente gera fatura dos fretes gerados no sistema 
+O cliente fatura os fretes gravados no sistema e gerando um título, imprime o boleto para enviar ao seu cliente e gera o arquivo de remessa para processar no banco.
+
+
 			
 ## Manual
 		Digitação Manual de titulos
