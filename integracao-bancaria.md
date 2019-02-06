@@ -2,7 +2,8 @@
 <!-- SUBTITLE: Integração Bancária a Pagar -->
 
 1. Origem
-	1. 1 Automática
+	1. Automática
+	2. Manual
 2. Processamento
 3. Saida
 # Origem
