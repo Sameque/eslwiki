@@ -9,7 +9,7 @@
 	2. Gerar Arquivo
 3. Saida
 	1. Boleto
-	5. Arquivo
+	2. Arquivo
 # Origem
 ## Automática
 ### Movimentos
