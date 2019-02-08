@@ -57,8 +57,10 @@ Note qua a fatura não possui dados bancários (nosso número, Contabancária, e
 
 		Digitação Manual de titulos
 
-![Faturamento Manual](/uploads/faturamento-manual.jpg "Faturamento Manual")
+Alem do faturamento de fretes é possível lançar faturas manualmente, basta o ususário acessar a tela do contas a pagar/receber, clicar no botão novo, digitar as informaçõe do título e gravar.
 
+![Faturamento Manual](/uploads/faturamento-manual.jpg "Faturamento Manual")
+(Modulo Transporte >> Financeiro >> Fechamento Contas a Receber >> Faturamento Cliente)
 # Processamento
 
 ## Gerar Boleto
@@ -86,8 +88,9 @@ Agora precisamos gerara o arquivo de remessa e enviar para o banco.
 (imagem do arquivo gerado pelo sistema)
 
 	Processando Retorno do banco
-	
-# Retorno
+
+Apos processar no site/aplicação do banco é preciso baixar o arquivo de retorno e atualizar os títulos conforme retorno do banco.
+Esse processo é muito importante pois no arquivo de retorno possui as ocorrencias lançadas pelo banco para cada título.
 
 # Notas
 1. Caso a emprsa não  utilize a impressão de boletos pelo sistema ESL os dados bancários serão gerados no momento da geração do arquivo de remessa (2.2)
