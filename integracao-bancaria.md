@@ -27,6 +27,8 @@ O cliente fatura os fretes gravados no sistema e gerando um título, imprime o b
 
 	Minutas geradas no sistema
 
+Os fretes são gerados no modulo de Transportes.
+
 ![Minuta Gerada](/uploads/minuta-gerada.jpg "Minuta Gerada") ![Minuta Gerada 01](/uploads/minuta-gerada-01.jpg "Minuta Gerada 01")
 (Modulo Transporte >> Menu Operacional >> Emissão de Frete >> Botão Incluir)
 
@@ -35,6 +37,8 @@ O cliente fatura os fretes gravados no sistema e gerando um título, imprime o b
 
 
 	Faturamento
+
+Apos emissão os fretes ficam disponíveis para faturamento.
 
 ![Faturamento](/uploads/faturamento.jpg "Faturamento")
 (Modulo Transporte >> Financeiro >> Fechamento Contas a Receber >> Faturamento Cliente)
@@ -47,8 +51,13 @@ O cliente fatura os fretes gravados no sistema e gerando um título, imprime o b
 A pos faturar os movimentos a fatura fica disponivel para consulta no modulo financeiro, conforme imagem a baixo.
 Note qua a fatura não possui dados bancários (nosso número, Contabancária, etc. ), esses dados serão preenchidos automáticamante pelo sistema na impressão do boleto(*1).
 
+(TRUCAR IMAGEM)
 ![Fatura](/uploads/fatura.jpg "Fatura")
 (Modulo Financeiro >> Menu Lançamentos >> Contas a pagar / receber)
+
+		Digitação Manual de titulos
+
+
 
 # Processamento
 
@@ -67,9 +76,14 @@ Observe que apos a impressão os dados bancários são preenchidos.
 (Modulo Financeiro >> Menu Lançamentos >> Contas a pagar / receber)
 
 	Gerando Arquivo de Remessa
-	
+
+Agora precisamos gerara o arquivo de remessa e enviar para o banco.
+
 ![Gerando Remessa](/uploads/gerando-remessa.jpg "Gerando Remessa")
+(Modulo Financeiro >> Menu Cobrança >> Enviar títulos a receber)
+
 ![Arquivo](/uploads/arquivo.jpg "Arquivo")
+(imagem do arquivo gerado pelo sistema)
 
 	Processando Retorno do banco
 
