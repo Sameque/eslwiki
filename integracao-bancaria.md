@@ -34,11 +34,13 @@ O cliente fatura os fretes gravados no sistema e gerando um título, imprime o b
 ![Faturamento](/uploads/faturamento.jpg "Faturamento")
 ![Faturamento Detalhe](/uploads/faturamento-detalhe.jpg "Faturamento Detalhe")
 ![Faturamento](/uploads/faturamento_gerado.jpg "Faturamento")
+![Faturamento Gerado](/uploads/faturamento-gerado.jpg "Faturamento Gerado")
 
 	Faturamento
 ![Dados Bancarios](/uploads/dados-bancarios.jpg "Dados Bancarios")
 
 	Emissão de Boleto
+![Impressao Boleto](/uploads/impressao-boleto.jpg "Impressao Boleto")
 
 #### Gerando Arquivo de Remessa
 
