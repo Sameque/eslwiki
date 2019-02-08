@@ -57,7 +57,7 @@ Note qua a fatura não possui dados bancários (nosso número, Contabancária, e
 
 		Digitação Manual de titulos
 
-
+![Faturamento Manual](/uploads/faturamento-manual.jpg "Faturamento Manual")
 
 # Processamento
 
