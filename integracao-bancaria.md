@@ -31,7 +31,9 @@ O cliente fatura os fretes gravados no sistema e gerando um título, imprime o b
 (Modulo Transporte >> Menu Operacional >> Emissão de Frete >> Botão Incluir)
 ![Minutas](/uploads/minutas.jpg "Minutas")
 (Modulo Transporte >> Menu Operacional >> Emissão de Frete)
+
 	Faturamento
+
 ![Faturamento](/uploads/faturamento.jpg "Faturamento")
 (Modulo Transporte >> Financeiro >> Fechamento Contas a Receber >> Faturamento Cliente)
 ![Faturamento Detalhe](/uploads/faturamento-detalhe.jpg "Faturamento Detalhe")
