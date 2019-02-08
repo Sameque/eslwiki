@@ -86,12 +86,6 @@ Agora precisamos gerara o arquivo de remessa e enviar para o banco.
 (imagem do arquivo gerado pelo sistema)
 
 	Processando Retorno do banco
-
-## Manual
-		Digitação Manual de titulos
-
-
-	Gerar Arquivo Remessa
 	
 # Retorno
 
