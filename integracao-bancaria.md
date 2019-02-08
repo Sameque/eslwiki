@@ -92,6 +92,8 @@ Agora precisamos gerara o arquivo de remessa e enviar para o banco.
 Apos processar no site/aplicação do banco é preciso baixar o arquivo de retorno e atualizar os títulos conforme retorno do banco.
 Esse processo é muito importante pois no arquivo de retorno possui as ocorrencias lançadas pelo banco para cada título.
 
+![Retorno](/uploads/retorno.jpg "Retorno")
+(Modulo Financeiro >> Menu Cobrança >> Retorno títulos a receber)
 
 # Notas
 1. Caso a emprsa não  utilize a impressão de boletos pelo sistema ESL os dados bancários serão gerados no momento da geração do arquivo de remessa (2.2)
