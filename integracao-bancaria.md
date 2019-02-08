@@ -44,6 +44,8 @@ O cliente fatura os fretes gravados no sistema e gerando um título, imprime o b
 (Modulo Transporte >> Financeiro >> Fechamento Contas a Receber >> Faturamento Cliente >> Botão Detalhe)
 
 	Fatura
+A pos faturar os movimentos a fatura fica disponivel para consulta no modulo financeiro, conforme imagem a baixo.
+Note qua a fatura não possui dados bancários (nosso número, Contabancária, etc. ), esses dados serão preenchidos automáticamante pelo sistema na impressão do boleto(*1).
 
 ![Fatura](/uploads/fatura.jpg "Fatura")
 (Modulo Financeiro >> Menu Lançamentos >> Contas a pagar / receber)
@@ -53,10 +55,16 @@ O cliente fatura os fretes gravados no sistema e gerando um título, imprime o b
 ## Gerar Boleto
 
 	Emissão de Boleto
-	
+O próximo passo é fazer a impressão do boleto que será enviado para o cliente efetuar o pagamento.
+
 ![Impressao Boleto](/uploads/impressao-boleto.jpg "Impressao Boleto")
 ![Boleto Impresso](/uploads/boleto-impresso.jpg "Boleto Impresso")
+(Modulo Financeiro >> Menu Lançamentos >> Emissão de Boleto/Fatura)
+
+Observe que apos a impressão os dados bancários são preenchidos.
+
 ![Dados Bancarios](/uploads/dados-bancarios.jpg "Dados Bancarios")
+(Modulo Financeiro >> Menu Lançamentos >> Contas a pagar / receber)
 
 	Gerando Arquivo de Remessa
 	
@@ -72,3 +80,6 @@ O cliente fatura os fretes gravados no sistema e gerando um título, imprime o b
 	Gerar Arquivo Remessa
 	
 # Retorno
+
+# Notas
+1. Caso a emprsa não  utilize a impressão de boletos pelo sistema ESL os dados bancários serão gerados no momento da geração do arquivo de remessa (2.2)
