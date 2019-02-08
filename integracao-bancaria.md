@@ -8,14 +8,14 @@
 2. Processamento
 	1. Gerar Boleto
 	2. Gerar Arquivo
-3. Saida
+3. Saída
 	1. Boleto
 	2. Arquivo
 # Introdução
-A integração bancária tem a finalidade de integrar a parte finaceiro do sistema com o banco atraves de arquivos de remessa e retorno.
+A integração bancária tem a finalidade de integrar a parte financeiro do sistema com o banco através de arquivos de remessa e retorno.
 
-Operacionalmente o usuário gera um arquivo de remessa atraves do sistema, processa esse arquivo no site/aplicação do banco que devolve um arquivo de retorno para o usuário contendo o resultado. 
-O usuário processa o arquivo no sistema que dependendo da ocorrencia lançada pelo banco executa a baixa ou não do(s) titulo(s).
+Operacionalmente o usuário gera um arquivo de remessa através do sistema, processa esse arquivo no site/aplicação do banco que devolve um arquivo de retorno para o usuário contendo o resultado. 
+O usuário processa o arquivo no sistema que dependendo da ocorrência lançada pelo banco executa a baixa ou não do(s) titulo(s).
 
 ![Remessa Retorno](/uploads/remessa-retorno.png "Remessa Retorno")
 
@@ -38,7 +38,7 @@ Os fretes são gerados no modulo de Transportes.
 
 	Faturamento
 
-Apos emissão os fretes ficam disponíveis para faturamento.
+Após emissão os fretes ficam disponíveis para faturamento.
 
 ![Faturamento](/uploads/faturamento.jpg "Faturamento")
 (Modulo Transporte >> Financeiro >> Fechamento Contas a Receber >> Faturamento Cliente)
@@ -48,16 +48,16 @@ Apos emissão os fretes ficam disponíveis para faturamento.
 (Modulo Transporte >> Financeiro >> Fechamento Contas a Receber >> Faturamento Cliente >> Botão Detalhe)
 
 	Fatura
-A pos faturar os movimentos a fatura fica disponivel para consulta no modulo financeiro, conforme imagem a baixo.
-Note qua a fatura não possui dados bancários (nosso número, Contabancária, etc. ), esses dados serão preenchidos automáticamante pelo sistema na impressão do boleto(*1).
+Após faturar os movimentos a fatura fica disponível para consulta no modulo financeiro, conforme imagem a baixo.
+Note que a fatura não possui dados bancários (nosso número, Conta bancária, etc. ), esses dados serão preenchidos automaticamente pelo sistema na impressão do boleto(*1).
 
 (TRUCAR IMAGEM)
 ![Fatura](/uploads/fatura.jpg "Fatura")
 (Modulo Financeiro >> Menu Lançamentos >> Contas a pagar / receber)
 
-		Digitação Manual de titulos
+		Digitação Manual de títulos
 
-Alem do faturamento de fretes é possível lançar faturas manualmente, basta o ususário acessar a tela do contas a pagar/receber, clicar no botão novo, digitar as informaçõe do título e gravar.
+Além do faturamento de fretes é possível lançar faturas manualmente, basta o usuário acessar a tela do contas a pagar/receber, clicar no botão novo, digitar as informaçõe do título e gravar.
 
 ![Faturamento Manual](/uploads/faturamento-manual.jpg "Faturamento Manual")
 (Modulo Transporte >> Financeiro >> Fechamento Contas a Receber >> Faturamento Cliente)
@@ -72,7 +72,7 @@ O próximo passo é fazer a impressão do boleto que será enviado para o client
 ![Boleto Impresso](/uploads/boleto-impresso.jpg "Boleto Impresso")
 (Modulo Financeiro >> Menu Lançamentos >> Emissão de Boleto/Fatura)
 
-Observe que apos a impressão os dados bancários são preenchidos.
+Observe que após a impressão os dados bancários são preenchidos.
 
 ![Dados Bancarios](/uploads/dados-bancarios.jpg "Dados Bancarios")
 (Modulo Financeiro >> Menu Lançamentos >> Contas a pagar / receber)
@@ -89,16 +89,17 @@ Agora precisamos gerara o arquivo de remessa e enviar para o banco.
 
 	Processando Retorno do banco
 
-Apos processar no site/aplicação do banco é preciso baixar o arquivo de retorno e atualizar os títulos conforme retorno do banco.
-Esse processo é muito importante pois no arquivo de retorno possui as ocorrencias lançadas pelo banco para cada título.
+Após processar no site/aplicação do banco é preciso baixar o arquivo de retorno e atualizar os títulos conforme retorno do banco.
+Esse processo é muito importante pois no arquivo de retorno possui as ocorrências lançadas pelo banco para cada título.
 
 ![Retorno](/uploads/retorno.jpg "Retorno")
 (Modulo Financeiro >> Menu Cobrança >> Retorno títulos a receber)
 
-Se a pagamento foi efetuado o banco envia, no arquivo de remessa, a ocorrencia de entreda confirmada e quando o ususário processa o arquivo o sistema baixa automáticamente.
+Se a pagamento foi efetuado o banco envia, no arquivo de remessa, a ocorrência de entrada confirmada e quando o usuário processa o arquivo o sistema efetua a baixa automaticamente.
 
 ![Baixa](/uploads/baixa.jpg "Baixa")
 (Modulo Financeiro >> Menu Lançamentos >> Contas a pagar/receber)
 
 # Notas
-1. Caso a emprsa não  utilize a impressão de boletos pelo sistema ESL os dados bancários serão gerados no momento da geração do arquivo de remessa (2.2)
+1. Caso a empresa não  utilize a impressão de boletos pelo sistema ESL os dados bancários serão gerados no momento da geração do arquivo de remessa (2.2)
+
