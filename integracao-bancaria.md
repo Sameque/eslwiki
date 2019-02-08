@@ -45,7 +45,7 @@ O cliente fatura os fretes gravados no sistema e gerando um título, imprime o b
 ![Dados Bancarios](/uploads/dados-bancarios.jpg "Dados Bancarios")
 
 	Gerando Arquivo de Remessa
-
+![Gerando Remessa](/uploads/gerando-remessa.jpg "Gerando Remessa")
 
 #### Processando Retorno do banco
 
