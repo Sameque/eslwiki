@@ -6,4 +6,3 @@
 
 2. Financeiro [![N|Solid](/uploads/ico/fin.png)](https://eslwiki.herokuapp.com/integracao-bancaria)
 
-![Fin](/uploads/ico/fin.png "Fin")
