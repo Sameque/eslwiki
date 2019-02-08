@@ -21,7 +21,7 @@ Operacionalmente o usuário gera um arquivo de remessa atraves do sistema, proce
 Os títulos podem ter origem pelo processo automático de faturamento de movimentos ou lançados manualmente pelo usuário.
 
 # Origem
-## Automática
+## Gerar Fatura
 O cliente fatura os fretes gravados no sistema e gerando um título, imprime o boleto para enviar ao seu cliente e gera o arquivo de remessa para processar no banco.
 
 #### Minutas geradas no sistema
@@ -37,6 +37,10 @@ O cliente fatura os fretes gravados no sistema e gerando um título, imprime o b
 
 	Fatura
 ![Fatura](/uploads/fatura.jpg "Fatura")
+
+# Processamento
+
+## Gerar Boleto
 
 	Emissão de Boleto
 	
@@ -54,9 +58,6 @@ O cliente fatura os fretes gravados no sistema e gerando um título, imprime o b
 ## Manual
 		Digitação Manual de titulos
 
-# Processamento
-
-## Gerar Boleto
 
 	Gerar Arquivo Remessa
 	
