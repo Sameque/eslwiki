@@ -11,6 +11,9 @@
 3. Saida
 	1. Boleto
 	2. Arquivo
+
+[![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
+
 # Introdução
 A integração bancária tem a finalidade de integrar a parte finaceiro do sistema com o banco atraves de arquivos de remessa e retorno.
 
@@ -91,6 +94,7 @@ Agora precisamos gerara o arquivo de remessa e enviar para o banco.
 
 Apos processar no site/aplicação do banco é preciso baixar o arquivo de retorno e atualizar os títulos conforme retorno do banco.
 Esse processo é muito importante pois no arquivo de retorno possui as ocorrencias lançadas pelo banco para cada título.
+
 
 # Notas
 1. Caso a emprsa não  utilize a impressão de boletos pelo sistema ESL os dados bancários serão gerados no momento da geração do arquivo de remessa (2.2)
