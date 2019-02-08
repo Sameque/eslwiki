@@ -1,4 +1,4 @@
-<!-- TITLE: Integração Bancária -->
+<!-- TITLE: Integração Bancária Receber (COBRANÇA)-->
 <!-- SUBTITLE: Integração Bancária a Pagar -->
 
 1. Introdução
