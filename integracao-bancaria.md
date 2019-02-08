@@ -95,5 +95,7 @@ Esse processo é muito importante pois no arquivo de retorno possui as ocorrenci
 ![Retorno](/uploads/retorno.jpg "Retorno")
 (Modulo Financeiro >> Menu Cobrança >> Retorno títulos a receber)
 
+![Baixa](/uploads/baixa.jpg "Baixa")
+(Modulo Financeiro >> Menu Lançamentos >> Contas a pagar/receber)
 # Notas
 1. Caso a emprsa não  utilize a impressão de boletos pelo sistema ESL os dados bancários serão gerados no momento da geração do arquivo de remessa (2.2)
