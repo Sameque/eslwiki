@@ -11,9 +11,6 @@
 3. Saida
 	1. Boleto
 	2. Arquivo
-
-[![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://eslwiki.herokuapp.com/integracao-bancaria#notas)
-
 # Introdução
 A integração bancária tem a finalidade de integrar a parte finaceiro do sistema com o banco atraves de arquivos de remessa e retorno.
 
