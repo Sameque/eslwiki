@@ -62,4 +62,3 @@ O cliente fatura os fretes gravados no sistema e gerando um título, imprime o b
 	Gerar Arquivo Remessa
 	
 # Retorno
-<teste> </teste>
