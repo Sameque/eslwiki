@@ -32,7 +32,7 @@ O cliente fatura os fretes gravados no sistema e gerando um título, imprime o b
 
 #### Faturamento
 ![Faturamento](/uploads/faturamento.jpg "Faturamento")
-![Faturamento](/uploads/faturamento_detalhe.jpg "Faturamento")
+![Faturamento Detalhe](/uploads/faturamento-detalhe.jpg "Faturamento Detalhe")
 ![Faturamento](/uploads/faturamento_gerado.jpg "Faturamento")
 
 #### Faturamento
