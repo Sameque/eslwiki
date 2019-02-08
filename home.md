@@ -1,4 +1,4 @@
-![Integracao Finanaceira](/uploads/ico/integracao-finanaceira.jpg "Integracao Finanaceira")<!-- TITLE: Home -->
+![Financeiro](/uploads/ico/financeiro.jpg "Financeiro")<!-- TITLE: Home -->
 <!-- SUBTITLE: Documentação referente ao sistema ESL e seus processos. -->
 
 
