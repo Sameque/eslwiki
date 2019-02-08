@@ -30,7 +30,7 @@ O cliente fatura os fretes gravados no sistema e gerando um título, imprime o b
 
 ![Minutas](/uploads/minutas.jpg "Minutas")
 
-#### Faturamento
+	Faturamento
 ![Faturamento](/uploads/faturamento.jpg "Faturamento")
 ![Faturamento Detalhe](/uploads/faturamento-detalhe.jpg "Faturamento Detalhe")
 ![Faturamento](/uploads/faturamento_gerado.jpg "Faturamento")
