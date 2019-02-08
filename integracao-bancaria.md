@@ -29,8 +29,17 @@ O cliente fatura os fretes gravados no sistema e gerando um título, imprime o b
 ![Minuta Gerada](/uploads/minuta-gerada.jpg "Minuta Gerada") ![Minuta Gerada 01](/uploads/minuta-gerada-01.jpg "Minuta Gerada 01")
 
 ![Minutas](/uploads/minutas.jpg "Minutas")
-#### Minutas geradas no sistema
 
+#### Faturamento
+![Faturamento](/uploads/faturamento.jpg "Faturamento")
+
+#### Faturamento
+
+#### Emissão de Boleto
+
+#### Gerando Arquivo de Remessa
+
+#### Processando Retorno do banco
 
 ## Manual
 		Digitação Manual de titulos
