@@ -7,7 +7,7 @@
 				
 |Coluna 	|Tipo de Dados 	|Tamanho/Precisão,Escala 	| Descrição|
 | ------------- |  ------------- |  ------------- | ------------- | 			
-	|id_Movimento 	|INT 	|-- 	|          |
+|id_Movimento 	|INT 	|-- 	| Chave primária da tabela         |
 |id_Transportadora 	|INT 	|-- 	|          |
 |id_Cliente 	|INT 	|-- 	|          |
 |id_TransportadoraServico 	|INT 	|-- 	|          |
