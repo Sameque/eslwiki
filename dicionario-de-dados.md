@@ -9,8 +9,6 @@
 | Content Cell  | Content Cell  |
 | Content Cell  | Content Cell  |
 |Coluna|	|Tipo de Dados|	|Tamanho/Precisão,Escala|	|Descrição|
-			
-Coluna	Tipo de Dados	Tamanho/Precisão,Escala	Descrição
 |id_Movimento|	|INT|	|--|	|          |
 |id_Transportadora|	|INT|	|--|	|          |
 |id_Cliente|	|INT|	|--|	|          |
