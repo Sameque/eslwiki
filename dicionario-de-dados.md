@@ -7,7 +7,6 @@
 				
 |Coluna 	|Tipo de Dados 	|Tamanho/Precisão,Escala 	| Descrição|
 | ------------- |  ------------- |  ------------- | ------------- | 			
-
 |id_Movimento                            |INT       |--        |                              |
 |id_Transportadora                       |INT       |--        |                              |
 |id_Cliente                              |INT       |--        |                              |
