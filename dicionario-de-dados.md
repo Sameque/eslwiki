@@ -2,7 +2,7 @@
 <!-- SUBTITLE: A quick summary of Dicionario De Dados -->
 
 # tbdMovimento
-	Essa tabela guarda a maioria das informações referente a movimetno (CT-e/Minuta/NFSe)
+	Essa tabela guarda a maioria das informações referente ao movimetno (CT-e/Minuta/NFSe)
 
 				
 |Coluna 	|Tipo de Dados 	|Tamanho/Precisão,Escala 	| Descrição|
