@@ -7,9 +7,9 @@
 				
 |Coluna 	|Tipo de Dados 	|Tamanho/Precisão,Escala 	| Descrição|
 | ------------- |  ------------- |  ------------- | ------------- | 			
-|id_Movimento 	|INT 	|-- 	| Chave primária da tabela         |
-|id_Transportadora 	|INT 	|-- 	|          |
-|id_Cliente 	|INT 	|-- 	|          |
+|id_Movimento 	|INT 	|-- 	                     | Chave primária          |
+|id_Transportadora 	|INT 	|-- 	                | Chave secundária (tbdPessoa)        |
+|id_Cliente 	|INT 	|-- 	                            |          |
 |id_TransportadoraServico 	|INT 	|-- 	|          |
 |qt_prazoentrega 	|CHAR 	|6 	|          |
 |id_Cidade 	|INT 	|-- 	|          |
