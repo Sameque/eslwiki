@@ -4,11 +4,8 @@
 # tbdMovimento
 	Essa tabela guarda a maioria das informações referente a movimetno (CT-e/Minuta/NFSe)
 
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
 |Coluna|	|Tipo de Dados|	|Tamanho/Precisão,Escala|	|Descrição|
+| ------------- |  ------------- |  ------------- | ------------- | 
 |id_Movimento|	|INT|	|--|	|          |
 |id_Transportadora|	|INT|	|--|	|          |
 |id_Cliente|	|INT|	|--|	|          |
