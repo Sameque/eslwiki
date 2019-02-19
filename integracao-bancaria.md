@@ -11,7 +11,7 @@
 3. Saída
 	1. Boleto
 	2. Arquivo
-# Introdução
+# 1. Introdução
 A integração bancária tem a finalidade de integrar a parte financeiro do sistema com o banco através de arquivos de remessa e retorno.
 
 Operacionalmente o usuário gera um arquivo de remessa através do sistema, processa esse arquivo no site/aplicação do banco que devolve um arquivo de retorno para o usuário contendo o resultado. 
@@ -21,7 +21,7 @@ O usuário processa o arquivo no sistema que dependendo da ocorrência lançada 
 
 Os títulos podem ter origem pelo processo automático de faturamento de movimentos ou lançados manualmente pelo usuário.
 
-# Origem
+# 2. Origem
 ## Faturamento Cliente
 O cliente fatura os fretes gravados no sistema e gerando um título, imprime o boleto para enviar ao seu cliente e gera o arquivo de remessa para processar no banco.
 
