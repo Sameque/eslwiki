@@ -2,13 +2,14 @@
 <!-- SUBTITLE: Integração Bancária a Pagar -->
 
 1. Introdução
-1. Origem
+2. Origem
 	1. Faturamento Cliente
 	2. Manual
-2. Processamento
+3. Processamento
 	1. Gerar Boleto
 	2. Gerando Arquivo de Remessa
 	3. Processar Arquivo de Retorno
+4. Notas
 # 1. Introdução
 A integração bancária tem a finalidade de integrar a parte financeiro do sistema com o banco através de arquivos de remessa e retorno.
 
@@ -84,7 +85,7 @@ Agora precisamos gerara o arquivo de remessa e enviar para o banco.
 (imagem do arquivo gerado pelo sistema)
 
 	
-## 3.2 Processando Retorno do banco
+## 3.3 Processando Retorno do banco
 
 Após processar no site/aplicação do banco é preciso baixar o arquivo de retorno e atualizar os títulos conforme retorno do banco.
 Esse processo é muito importante pois no arquivo de retorno possui as ocorrências lançadas pelo banco para cada título.
@@ -97,6 +98,6 @@ Se a pagamento foi efetuado o banco envia, no arquivo de remessa, a ocorrência 
 ![Baixa](/uploads/baixa.jpg "Baixa")
 (Modulo Financeiro >> Menu Lançamentos >> Contas a pagar/receber)
 
-# Notas
+# 4. Notas
 1. Caso a empresa não  utilize a impressão de boletos pelo sistema ESL os dados bancários serão gerados no momento da geração do arquivo de remessa (2.2)
 
