@@ -3,7 +3,7 @@
 
 1. Introdução
 1. Origem
-	1. Automática
+	1. Faturamento Cliente
 	2. Manual
 2. Processamento
 	1. Gerar Boleto
@@ -22,8 +22,8 @@ O usuário processa o arquivo no sistema que dependendo da ocorrência lançada 
 Os títulos podem ter origem pelo processo automático de faturamento de movimentos ou lançados manualmente pelo usuário.
 
 # 2. Origem
-## Faturamento Cliente
-O cliente fatura os fretes gravados no sistema e gerando um título, imprime o boleto para enviar ao seu cliente e gera o arquivo de remessa para processar no banco.
+## 2.1 Faturamento Cliente
+O usuário fatura os fretes gravados no sistema, gerando um título, imprime o boleto para enviar ao seu cliente e gera o arquivo de remessa para processar no banco.
 
 	Minutas geradas no sistema
 
@@ -54,15 +54,15 @@ Note que a fatura não possui dados bancários (nosso número, Conta bancária, 
 ![Fatura](/uploads/fatura.jpg "Fatura")
 (Modulo Financeiro >> Menu Lançamentos >> Contas a pagar / receber)
 
-		Digitação Manual de títulos
+## 2.2 Digitação Manual de títulos
 
 Além do faturamento de fretes é possível lançar faturas manualmente, basta o usuário acessar a tela do contas a pagar/receber, clicar no botão novo, digitar as informaçõe do título e gravar.
 
 ![Faturamento Manual](/uploads/faturamento-manual.jpg "Faturamento Manual")
 (Modulo Transporte >> Financeiro >> Fechamento Contas a Receber >> Faturamento Cliente)
-# Processamento
+# 3. Processamento
 
-## Gerar Boleto
+## 3.1 Gerar Boleto
 
 	Emissão de Boleto
 O próximo passo é fazer a impressão do boleto que será enviado para o cliente efetuar o pagamento.
