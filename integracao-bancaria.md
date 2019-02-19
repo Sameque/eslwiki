@@ -51,7 +51,6 @@ Após emissão os fretes ficam disponíveis para faturamento.
 Após faturar os movimentos a fatura fica disponível para consulta no modulo financeiro, conforme imagem a baixo.
 Note que a fatura não possui dados bancários (nosso número, Conta bancária, etc. ), esses dados serão preenchidos automaticamente pelo sistema na impressão do boleto(*1).
 
-(TRUCAR IMAGEM)
 ![Fatura](/uploads/fatura.jpg "Fatura")
 (Modulo Financeiro >> Menu Lançamentos >> Contas a pagar / receber)
 
