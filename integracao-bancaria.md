@@ -64,7 +64,6 @@ Além do faturamento de fretes é possível lançar faturas manualmente, basta o
 
 ## 3.1 Gerar Boleto
 
-	Emissão de Boleto
 O próximo passo é fazer a impressão do boleto que será enviado para o cliente efetuar o pagamento.
 
 ![Impressao Boleto](/uploads/impressao-boleto.jpg "Impressao Boleto")
@@ -76,7 +75,7 @@ Observe que após a impressão os dados bancários são preenchidos.
 ![Dados Bancarios](/uploads/dados-bancarios.jpg "Dados Bancarios")
 (Modulo Financeiro >> Menu Lançamentos >> Contas a pagar / receber)
 
-	Gerando Arquivo de Remessa
+## 3.2 Gerando Arquivo de Remessa
 
 Agora precisamos gerara o arquivo de remessa e enviar para o banco.
 
