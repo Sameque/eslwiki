@@ -4,5 +4,5 @@
 
 1. [EDI](https://eslwiki.herokuapp.com/edi#edi)
 
-2. [Financeiro](https://eslwiki.herokuapp.com/integracao-bancaria)  
+2. [Integração Bancária Receber (COBRANÇA)](https://eslwiki.herokuapp.com/integracao-bancaria)  
 
