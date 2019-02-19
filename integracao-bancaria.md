@@ -7,10 +7,8 @@
 	2. Manual
 2. Processamento
 	1. Gerar Boleto
-	2. Gerar Arquivo
-3. Saída
-	1. Boleto
-	2. Arquivo
+	2. Gerando Arquivo de Remessa
+	3. Processar Arquivo de Retorno
 # 1. Introdução
 A integração bancária tem a finalidade de integrar a parte financeiro do sistema com o banco através de arquivos de remessa e retorno.
 
@@ -85,7 +83,8 @@ Agora precisamos gerara o arquivo de remessa e enviar para o banco.
 ![Arquivo](/uploads/arquivo.jpg "Arquivo")
 (imagem do arquivo gerado pelo sistema)
 
-	Processando Retorno do banco
+	
+## 3.2 Processando Retorno do banco
 
 Após processar no site/aplicação do banco é preciso baixar o arquivo de retorno e atualizar os títulos conforme retorno do banco.
 Esse processo é muito importante pois no arquivo de retorno possui as ocorrências lançadas pelo banco para cada título.
