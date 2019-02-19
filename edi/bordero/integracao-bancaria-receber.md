@@ -1,5 +1,5 @@
 <!-- TITLE: Integração Bancária Receber (COBRANÇA)-->
-<!-- SUBTITLE: Integração Bancária a Pagar -->
+<!-- SUBTITLE: Integração Bancária a Receber -->
 
 # Introdução
 A integração bancária tem a finalidade de integrar a parte financeiro do sistema com o banco através de arquivos de remessa e retorno.
