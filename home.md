@@ -4,5 +4,5 @@
 
 1. [EDI](https://eslwiki.herokuapp.com/edi#edi)
 
-2. [![N|Solid]](https://eslwiki.herokuapp.com/integracao-bancaria) Financeiro 
+2. [Financeiro](https://eslwiki.herokuapp.com/integracao-bancaria)  
 
