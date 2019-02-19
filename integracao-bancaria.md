@@ -1,16 +1,7 @@
 <!-- TITLE: Integração Bancária Receber (COBRANÇA)-->
 <!-- SUBTITLE: Integração Bancária a Pagar -->
 
-1. Introdução
-2. Origem
-	1. Faturamento Cliente
-	2. Manual
-3. Processamento
-	1. Gerar Boleto
-	2. Gerando Arquivo de Remessa
-	3. Processar Arquivo de Retorno
-4. Notas
-# 1. Introdução
+# Introdução
 A integração bancária tem a finalidade de integrar a parte financeiro do sistema com o banco através de arquivos de remessa e retorno.
 
 Operacionalmente o usuário gera um arquivo de remessa através do sistema, processa esse arquivo no site/aplicação do banco que devolve um arquivo de retorno para o usuário contendo o resultado. 
@@ -20,8 +11,8 @@ O usuário processa o arquivo no sistema que dependendo da ocorrência lançada 
 
 Os títulos podem ter origem pelo processo automático de faturamento de movimentos ou lançados manualmente pelo usuário.
 
-# 2. Origem
-## 2.1 Faturamento Cliente
+# Origem
+## Faturamento Cliente
 O usuário fatura os fretes gravados no sistema, gerando um título, imprime o boleto para enviar ao seu cliente e gera o arquivo de remessa para processar no banco.
 
 	Minutas geradas no sistema
@@ -53,13 +44,13 @@ Note que a fatura não possui dados bancários (nosso número, Conta bancária, 
 ![Fatura](/uploads/fatura.jpg "Fatura")
 (Modulo Financeiro >> Menu Lançamentos >> Contas a pagar / receber)
 
-## 2.2 Digitação Manual de títulos
+## Digitação Manual de títulos
 
 Além do faturamento de fretes é possível lançar faturas manualmente, basta o usuário acessar a tela do contas a pagar/receber, clicar no botão novo, digitar as informaçõe do título e gravar.
 
 ![Faturamento Manual](/uploads/faturamento-manual.jpg "Faturamento Manual")
 (Modulo Transporte >> Financeiro >> Fechamento Contas a Receber >> Faturamento Cliente)
-# 3. Processamento
+# Processamento
 
 ## 3.1 Gerar Boleto
 
@@ -74,7 +65,7 @@ Observe que após a impressão os dados bancários são preenchidos.
 ![Dados Bancarios](/uploads/dados-bancarios.jpg "Dados Bancarios")
 (Modulo Financeiro >> Menu Lançamentos >> Contas a pagar / receber)
 
-## 3.2 Gerando Arquivo de Remessa
+## Gerando Arquivo de Remessa
 
 Agora precisamos gerara o arquivo de remessa e enviar para o banco.
 
@@ -85,7 +76,7 @@ Agora precisamos gerara o arquivo de remessa e enviar para o banco.
 (imagem do arquivo gerado pelo sistema)
 
 	
-## 3.3 Processando Retorno do banco
+## Processando Retorno do banco
 
 Após processar no site/aplicação do banco é preciso baixar o arquivo de retorno e atualizar os títulos conforme retorno do banco.
 Esse processo é muito importante pois no arquivo de retorno possui as ocorrências lançadas pelo banco para cada título.
@@ -98,6 +89,6 @@ Se a pagamento foi efetuado o banco envia, no arquivo de remessa, a ocorrência 
 ![Baixa](/uploads/baixa.jpg "Baixa")
 (Modulo Financeiro >> Menu Lançamentos >> Contas a pagar/receber)
 
-# 4. Notas
+# Notas
 1. Caso a empresa não  utilize a impressão de boletos pelo sistema ESL os dados bancários serão gerados no momento da geração do arquivo de remessa (2.2)
 
