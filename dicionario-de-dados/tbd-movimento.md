@@ -1,6 +1,4 @@
-<!-- TITLE: Dicionário De Dados -->
-<!-- SUBTITLE: A quick summary of Dicionario De Dados -->
-
+<!-- TITLE: tbdMovimento-->
 # tbdMovimento
 	Essa tabela guarda a maioria das informações referente ao movimetno (CT-e/Minuta/NFSe)
 
