@@ -8,7 +8,6 @@
 |Coluna 	|Tipo de Dados 	|Tamanho/Precisão,Escala 	| Descrição|
 | ------------- |  ------------- |  ------------- | ------------- | 			
 
-
 |id_Movimento                            |INT       |--        |Chave primária|
 |id_Transportadora                       |INT       |--        |Chave estrangeira referente a Transportadora|
 |id_Cliente                              |INT       |--        |Chave estrangeira referente a filial/empresa logada no momento da geração do documento ou empresa selecionada|
