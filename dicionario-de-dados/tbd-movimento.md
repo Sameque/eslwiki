@@ -6,11 +6,11 @@
 |Coluna 	|Tipo de Dados 	|Tamanho/Precisão,Escala 	| Descrição|
 | ------------- |  ------------- |  ------------- | ------------- | 			
 |id_Movimento                            |INT       |--        |Chave primária|
-|id_Transportadora                       |INT       |--        |Chave estrangeira referente a Transportadora - Faz referência a tabela: |
-|id_Cliente                              |INT       |--        |Chave estrangeira referente a filial/empresa logada no momento da geração do documento ou empresa selecionada - Faz referência a tabela: |
-|id_TransportadoraServico                |INT       |--        |Chave estrangeira referente a tabela de preço utilizada - Faz referência a tabela: |
+|id_Transportadora                       |INT       |--        |Chave estrangeira referente a Transportadora - Faz referência a tabela: tbdPessoa |
+|id_Cliente                              |INT       |--        |Chave estrangeira referente a filial/empresa logada no momento da geração do documento ou empresa selecionada - Faz referência a tabela: tbdClienteSistema |
+|id_TransportadoraServico                |INT       |--        |Chave estrangeira referente a tabela de preço utilizada - Faz referência a tabela: tbdTransportadoraServico |
 |qt_prazoentrega                         |CHAR      |6         |Quantidade de prazoentrega|
-|id_Cidade                               |INT       |--        |Chave estrangeira referente a Cidade - Faz referência a tabela: |
+|id_Cidade                               |INT       |--        |Chave estrangeira referente a Cidade - Faz referência a tabela: tbdCidade |
 |nr_NotaFiscal                           |VARCHAR   |800       |Numero de NotaFiscal|
 |ds_Cliente                              |CHAR      |80        |Nome do destinatário. - Esse campo guarda o nome do destinatário no momento da gravação do movimento, caso o cadastro do cliente seja alterado essa campo não é atualizado.|
 |ds_Endereco                             |VARCHAR   |70        |Descrição do Endereco|
@@ -43,7 +43,7 @@
 |nr_Voo                                  |CHAR      |10        |Numero de Voo|
 |dt_Voo                                  |DATETIME  |--        |Data de Voo|
 |nr_AWB                                  |CHAR      |20        |Numero de AWB|
-|id_Agente                               |INT       |--        |Chave estrangeira referente a Agente - Faz referência a tabela: |
+|id_Agente                               |INT       |--        |Chave estrangeira referente a Agente - Faz referência a tabela: tbdPessoa |
 |vl_TaxasDiversas                        |DECIMAL   |16,4      |Valor de TaxasDiversas|
 |vl_Redespacho                           |DECIMAL   |16,4      |Valor de Redespacho|
 |hr_Partida                              |CHAR      |5         |Hora Partida|
@@ -71,18 +71,18 @@
 |cd_Servico                              |CHAR      |10        |Código/número Servico|
 |vl_Desconto                             |DECIMAL   |16,4      |Valor de Desconto|
 |vl_Acrescimo                            |DECIMAL   |16,4      |Valor de Acrescimo|
-|id_CiaAerea                             |INT       |--        |Chave estrangeira referente a CiaAerea - Faz referência a tabela: |
+|id_CiaAerea                             |INT       |--        |Chave estrangeira referente a CiaAerea - Faz referência a tabela: tbdPessoa |
 |tp_CAPAgente                            |CHAR      |1         |Tipo de CAPAgente|
 |tp_CAPCiaAerea                          |CHAR      |1         |Tipo de CAPCiaAerea|
-|id_Remetente                            |INT       |--        |Chave estrangeira referente a Remetente - Faz referência a tabela: |
+|id_Remetente                            |INT       |--        |Chave estrangeira referente a Remetente - Faz referência a tabela: tbdPessoa |
 |tp_Movimento                            |CHAR      |1         |Tipo de Movimento|
 |qt_Kilometro                            |INT       |--        |Quantidade de Kilometro|
 |tp_CarCliente                           |CHAR      |1         |Tipo de CarCliente|
 |tp_CarAgente                            |CHAR      |1         |Tipo de CarAgente|
 |ds_Remetente                            |VARCHAR   |80        |Descrição do Remetente|
-|id_Seguradora                           |INT       |--        |Chave estrangeira referente a Seguradora - Faz referência a tabela: |
-|id_Fiscal                               |INT       |--        |Chave estrangeira referente a Fiscal - Faz referência a tabela: |
-|id_AgenteEmissor                        |INT       |--        |Chave estrangeira referente a AgenteEmissor - Faz referência a tabela: |
+|id_Seguradora                           |INT       |--        |Chave estrangeira referente a Seguradora - Faz referência a tabela: tbdPessoa |
+|id_Fiscal                               |INT       |--        |Chave estrangeira referente a Fiscal - Faz referência a tabela: tbdMovimentoFiscal |
+|id_AgenteEmissor                        |INT       |--        |Chave estrangeira referente a AgenteEmissor - Faz referência a tabela: tbdPessoa |
 |cd_IE                                   |CHAR      |20        |Código/número IE|
 |ds_Embalagem                            |VARCHAR   |30        |Descrição do Embalagem|
 |cd_Cep                                  |CHAR      |8         |Código/número Cep|
@@ -95,23 +95,23 @@
 |tp_RetiraMercadoria                     |CHAR      |1         |Tipo de RetiraMercadoria|
 |tp_PagaFrete                            |CHAR      |1         |Tipo de PagaFrete|
 |dt_Movimento                            |DATETIME  |--        |Data de Movimento|
-|id_Destinatario                         |INT       |--        |Chave estrangeira referente a Destinatario - Faz referência a tabela: |
-|id_ClienteFaturamento                   |INT       |--        |Chave estrangeira referente a ClienteFaturamento - Faz referência a tabela: |
+|id_Destinatario                         |INT       |--        |Chave estrangeira referente a Destinatario - Faz referência a tabela: tbdPessoa |
+|id_ClienteFaturamento                   |INT       |--        |Chave estrangeira referente a ClienteFaturamento - Faz referência a tabela: tbdPessoa |
 |cm_Movimento                            |CHAR      |2000      |Comentário Movimento|
 |cm_Recepcao                             |VARCHAR   |100       |Comentário Recepcao|
 |ds_Transportadora                       |VARCHAR   |40        |Descrição do Transportadora|
 |ds_Agente                               |VARCHAR   |80        |Descrição do Agente|
 |ds_CiaAerea                             |VARCHAR   |80        |Descrição do CiaAerea|
 |tp_CalculaFreteAereo                    |CHAR      |1         |Tipo de CalculaFreteAereo|
-|id_Servico                              |INT       |--        |Chave estrangeira referente a Servico - Faz referência a tabela: |
+|id_Servico                              |INT       |--        |Chave estrangeira referente a Servico - Faz referência a tabela: tbdServico |
 |tp_TaxaMinimaCiaAerea                   |CHAR      |1         |Tipo de TaxaMinimaCiaAerea|
 |nr_Minuta                               |CHAR      |20        |Numero de Minuta|
 |tp_CAPAgenteEmissor                     |CHAR      |1         |Tipo de CAPAgenteEmissor|
 |vl_AgenteEmissor                        |DECIMAL   |16,4      |Valor de AgenteEmissor|
 |cd_NFFatura                             |CHAR      |20        |Código/número NFFatura|
 |dt_VencimentoTitulo                     |DATETIME  |--        |Data de VencimentoTitulo|
-|id_TabelaPrecoCiaAerea                  |INT       |--        |Chave estrangeira referente a TabelaPrecoCiaAerea - Faz referência a tabela: |
-|id_CidadeDestinatario                   |INT       |--        |Chave estrangeira referente a CidadeDestinatario - Faz referência a tabela: |
+|id_TabelaPrecoCiaAerea                  |INT       |--        |Chave estrangeira referente a TabelaPrecoCiaAerea - Faz referência a tabela: tbdTabelaCiaAerea |
+|id_CidadeDestinatario                   |INT       |--        |Chave estrangeira referente a CidadeDestinatario - Faz referência a tabela: tbdCidade |
 |vl_EntregaAgente                        |DECIMAL   |16,4      |Valor de EntregaAgente|
 |tp_DescontoCiaAerea                     |CHAR      |1         |Tipo de DescontoCiaAerea|
 |dt_Atualizacao                          |DATETIME  |--        |Data de Atualizacao|
@@ -120,13 +120,13 @@
 |tp_TaxaMinimaTransportadora             |CHAR      |1         |Tipo de TaxaMinimaTransportadora|
 |tp_ContaCorrente                        |CHAR      |1         |Tipo de ContaCorrente|
 |tp_ImpressoRelacaoCarga                 |CHAR      |1         |Tipo de ImpressoRelacaoCarga|
-|id_TransportadoraTerrestre              |INT       |--        |Chave estrangeira referente a TransportadoraTerrestre - Faz referência a tabela: |
+|id_TransportadoraTerrestre              |INT       |--        |Chave estrangeira referente a TransportadoraTerrestre - Faz referência a tabela: tbdPessoa |
 |ds_TransportadoraTerrestre              |VARCHAR   |40        |Descrição do TransportadoraTerrestre|
-|id_TabelaTransportadora                 |INT       |--        |Chave estrangeira referente a TabelaTransportadora - Faz referência a tabela: |
+|id_TabelaTransportadora                 |INT       |--        |Chave estrangeira referente a TabelaTransportadora - Faz referência a tabela: tbdTransportadoraServico|
 |tp_Categoria                            |CHAR      |1         |Tipo de Categoria|
-|id_AgenteColeta                         |INT       |--        |Chave estrangeira referente a AgenteColeta - Faz referência a tabela: |
+|id_AgenteColeta                         |INT       |--        |Chave estrangeira referente a AgenteColeta - Faz referência a tabela: tbdPessoa |
 |vl_AgenteColeta                         |DECIMAL   |16,4      |Valor de AgenteColeta|
-|id_Coletor                              |INT       |--        |Chave estrangeira referente a Coletor - Faz referência a tabela: |
+|id_Coletor                              |INT       |--        |Chave estrangeira referente a ao motorista da Coleta - Faz referência a tabela: tbdPessoa |
 |ds_AgenteColeta                         |VARCHAR   |80        |Descrição do AgenteColeta|
 |tp_Documento                            |CHAR      |1         |Tipo de Documento|
 |tp_CAPAgenteColeta                      |CHAR      |1         |Tipo de CAPAgenteColeta|
@@ -137,17 +137,17 @@
 |dt_Correio                              |DATETIME  |--        |Data de Correio|
 |vl_Correio                              |DECIMAL   |16,4      |Valor de Correio|
 |vl_FreteAereoDescontado                 |DECIMAL   |16,4      |Valor de FreteAereoDescontado|
-|id_Veiculo                              |INT       |--        |Chave estrangeira referente a Veiculo - Faz referência a tabela: |
-|id_Motorista                            |INT       |--        |Chave estrangeira referente a Motorista - Faz referência a tabela: |
+|id_Veiculo                              |INT       |--        |Chave estrangeira referente a Veiculo - Faz referência a tabela: tbdVeiculo |
+|id_Motorista                            |INT       |--        |Chave estrangeira referente a Motorista - Faz referência a tabela: tbdPessoa |
 |tp_CidadeCalculo                        |CHAR      |1         |Tipo de CidadeCalculo|
 |tp_Faturado                             |CHAR      |1         |Tipo de Faturado|
-|id_Consignatario                        |INT       |--        |Chave estrangeira referente a Consignatario - Faz referência a tabela: |
+|id_Consignatario                        |INT       |--        |Chave estrangeira referente a Consignatario - Faz referência a tabela: tbdPessoa |
 |tp_AtualizarWeb                         |CHAR      |1         |Tipo de AtualizarWeb|
-|id_FormaPagamento                       |INT       |--        |Chave estrangeira referente a FormaPagamento - Faz referência a tabela: |
-|id_TabelaPrecoCorreio                   |INT       |--        |Chave estrangeira referente a TabelaPrecoCorreio - Faz referência a tabela: |
+|id_FormaPagamento                       |INT       |--        |Chave estrangeira referente a FormaPagamento - Faz referência a tabela: tbdFormaPagamento |
+|id_TabelaPrecoCorreio                   |INT       |--        |Chave estrangeira referente a TabelaPrecoCorreio|
 |dt_Pagamento                            |DATETIME  |--        |Data de Pagamento|
 |kg_CiaAerea                             |DECIMAL   |16,4      |Kilo da CiaAerea|
-|id_Embalagem                            |INT       |--        |Chave estrangeira referente a Embalagem - Faz referência a tabela: |
+|id_Embalagem                            |INT       |--        |Chave estrangeira referente a Embalagem - Faz referência a tabela: tbdEmbalagem |
 |cm_MovimentoMinuta                      |VARCHAR   |2000      |Comentário MovimentoMinuta|
 |dt_Aviso                                |DATETIME  |--        |Data de Aviso|
 |hr_Aviso                                |CHAR      |5         |Hora Aviso|
@@ -155,22 +155,22 @@
 |cm_Aviso                                |VARCHAR   |50        |Comentário Aviso|
 |tp_FechamentoAgente                     |CHAR      |1         |Tipo de FechamentoAgente|
 |ds_RazaoSocial                          |VARCHAR   |80        |Descrição do RazaoSocial|
-|id_Correio                              |INT       |--        |Chave estrangeira referente a Correio - Faz referência a tabela: |
+|id_Correio                              |INT       |--        |Chave estrangeira referente a Correio - Faz referência a tabela: tbdCorreio |
 |tp_CAPCorreio                           |CHAR      |1         |Tipo de CAPCorreio|
 |qt_VolumeImpressaoAWB                   |INT       |--        |Quantidade de VolumeImpressaoAWB|
 |vl_EntregaObrigatoria                   |DECIMAL   |16,4      |Valor de EntregaObrigatoria|
-|id_FilialOrigem                         |INT       |--        |Chave estrangeira referente a FilialOrigem - Faz referência a tabela: |
-|id_MovimentoFilial                      |INT       |--        |Chave estrangeira referente a MovimentoFilial - Faz referência a tabela: |
+|id_FilialOrigem                         |INT       |--        |Chave estrangeira referente a FilialOrigem - Faz referência a tabela: tbdPessoa |
+|id_MovimentoFilial                      |INT       |--        |Chave estrangeira referente a MovimentoFilial - Faz referência a tabela: tbdPessoa |
 |nr_Conhecimento                         |CHAR      |20        |Numero de Conhecimento|
 |pc_Aliquota                             |DECIMAL   |16,4      |Porcentagem Aliquota|
-|id_Campanha                             |INT       |--        |Chave estrangeira referente a Campanha - Faz referência a tabela: |
+|id_Campanha                             |INT       |--        |Chave estrangeira referente a Campanha - Faz referência a tabela: tbdCampanhaMovimento |
 |ds_Contato                              |VARCHAR   |60        |Descrição do Contato|
 |tp_Cobranca                             |CHAR      |1         |Tipo de Cobranca|
 |vl_Tarifa                               |DECIMAL   |16,4      |Valor de Tarifa|
-|id_ServicoAereo                         |INT       |--        |Chave estrangeira referente a ServicoAereo - Faz referência a tabela: |
+|id_ServicoAereo                         |INT       |--        |Chave estrangeira referente a ServicoAereo - Faz referência a tabela: tbdTipoServico |
 |cd_ServicoAereo                         |CHAR      |5         |Código/número ServicoAereo|
-|id_TipoAgenteEntrega                    |INT       |--        |Chave estrangeira referente a TipoAgenteEntrega - Faz referência a tabela: |
-|id_TipoAgenteColeta                     |INT       |--        |Chave estrangeira referente a TipoAgenteColeta - Faz referência a tabela: |
+|id_TipoAgenteEntrega                    |INT       |--        |Chave estrangeira referente a TipoAgenteEntrega - Faz referência a tabela: tbdTipoTabelaAgente |
+|id_TipoAgenteColeta                     |INT       |--        |Chave estrangeira referente a TipoAgenteColeta - Faz referência a tabela: tbdTipoTabelaAgente |
 |qt_KilometroColeta                      |INT       |--        |Quantidade de KilometroColeta|
 |vl_ExcedentePeso                        |DECIMAL   |16,4      |Valor de ExcedentePeso|
 |vl_Emergencia                           |DECIMAL   |16,4      |Valor de Emergencia|
@@ -181,10 +181,10 @@
 |vl_TarifaAerea                          |DECIMAL   |16,4      |Valor de TarifaAerea|
 |vl_TaxasPagarAWB                        |DECIMAL   |16,4      |Valor de TaxasPagarAWB|
 |vl_TaxasReceberAWB                      |DECIMAL   |16,4      |Valor de TaxasReceberAWB|
-|id_CidadeOrigem                         |INT       |--        |Chave estrangeira referente a CidadeOrigem - Faz referência a tabela: |
-|id_Manifesto                            |INT       |--        |Chave estrangeira referente a Manifesto - Faz referência a tabela: |
+|id_CidadeOrigem                         |INT       |--        |Chave estrangeira referente a CidadeOrigem - Faz referência a tabela: tbdCidade |
+|id_Manifesto                            |INT       |--        |Chave estrangeira referente a Manifesto - Faz referência a tabela: tbdManifesto |
 |qt_VolumesLidos                         |INT       |--        |Quantidade de VolumesLidos|
-|id_ItemPedidoColeta                     |INT       |--        |Chave estrangeira referente a ItemPedidoColeta - Faz referência a tabela: |
+|id_ItemPedidoColeta                     |INT       |--        |Chave estrangeira referente a ItemPedidoColeta - Faz referência a tabela: tbdItemPedidoColeta |
 |qt_KilometroMovimento                   |INT       |--        |Quantidade de KilometroMovimento|
 |dt_PrazoEntrega                         |DATETIME  |--        |Data de PrazoEntrega|
 |hr_PrazoEntrega                         |CHAR      |5         |Hora PrazoEntrega|
@@ -196,19 +196,17 @@
 |vl_Ademe                                |DECIMAL   |16,4      |Valor de Ademe|
 |vl_Despacho                             |DECIMAL   |16,4      |Valor de Despacho|
 |nr_ConhecimentoTransportadora           |CHAR      |20        |Numero de ConhecimentoTransportadora|
-|id_Status                               |INT       |--        |Chave estrangeira referente a Status - Faz referência a tabela: |
 |cd_Emergencia                           |VARCHAR   |50        |Código/número Emergencia|
-|id_ManifestoEntrega                     |INT       |--        |Chave estrangeira referente a ManifestoEntrega - Faz referência a tabela: |
+|id_ManifestoEntrega                     |INT       |--        |Chave estrangeira referente a ManifestoEntrega - Faz referência a tabela: tbdManifesto |
 |dt_Despacho                             |DATETIME  |--        |Data de Despacho|
 |dt_Retirada                             |DATETIME  |--        |Data de Retirada|
 |dt_Redespacho                           |DATETIME  |--        |Data de Redespacho|
 |tp_Redespacho                           |CHAR      |1         |Tipo de Redespacho|
-|id_TransportadoraRedespacho             |INT       |--        |Chave estrangeira referente a TransportadoraRedespacho - Faz referência a tabela: |
-|id_RelacaoCarga                         |INT       |--        |Chave estrangeira referente a RelacaoCarga - Faz referência a tabela: |
-|id_ManifestoViagem                      |INT       |--        |Chave estrangeira referente a ManifestoViagem - Faz referência a tabela: |
+|id_TransportadoraRedespacho             |INT       |--        |Chave estrangeira referente a TransportadoraRedespacho - Faz referência a tabela: tbdPessoa |
+|id_ManifestoViagem                      |INT       |--        |Chave estrangeira referente a ManifestoViagem - Faz referência a tabela: tbdManifesto |
 |dt_Viagem                               |DATETIME  |--        |Data de Viagem|
-|id_RemetenteCentroCusto                 |INT       |--        |Chave estrangeira referente a RemetenteCentroCusto - Faz referência a tabela: |
-|id_TipoMovimento                        |INT       |--        |Chave estrangeira referente a TipoMovimento - Faz referência a tabela: |
+|id_RemetenteCentroCusto                 |INT       |--        |Chave estrangeira referente a RemetenteCentroCusto - Faz referência a tabela: tbdRemetenteCentroCusto |
+|id_TipoMovimento                        |INT       |--        |Chave estrangeira referente a TipoMovimento - Faz referência a tabela: tbdTipoMovimento |
 |nr_Referencia                           |CHAR      |255       |Numero de Referencia|
 |ds_GrauParentesco                       |VARCHAR   |40        |Descrição do GrauParentesco|
 |dt_Cadastro                             |DATETIME  |--        |Data de Cadastro|
@@ -227,15 +225,15 @@
 |dt_ImpressaoConhecimento                |DATETIME  |--        |Data de ImpressaoConhecimento|
 |hr_ImpressaoConhecimento                |CHAR      |5         |Hora ImpressaoConhecimento|
 |vl_FreteCliente                         |DECIMAL   |16,4      |Valor de FreteCliente|
-|id_Carreta                              |INT       |--        |Chave estrangeira referente a Carreta - Faz referência a tabela: |
+|id_Carreta                              |INT       |--        |Chave estrangeira referente a Carreta - Faz referência a tabela: tbdVeiculo |
 |tp_EnviarEDI                            |CHAR      |1         |Tipo de EnviarEDI|
 |tp_EnviarEDIEmbarque                    |CHAR      |1         |Tipo de EnviarEDIEmbarque|
-|id_UsuarioEntrega                       |INT       |--        |Chave estrangeira referente a UsuarioEntrega - Faz referência a tabela: |
+|id_UsuarioEntrega                       |INT       |--        |Chave estrangeira referente a UsuarioEntrega - Faz referência a tabela: tbdPessoa |
 |dt_DigitacaoEntrega                     |DATETIME  |--        |Data de DigitacaoEntrega|
-|id_UsuarioCadastro                      |INT       |--        |Chave estrangeira referente a UsuarioCadastro - Faz referência a tabela: |
+|id_UsuarioCadastro                      |INT       |--        |Chave estrangeira referente a UsuarioCadastro - Faz referência a tabela: tbdPessoa |
 |ds_EnderecoEntrega                      |VARCHAR   |80        |Descrição do EnderecoEntrega|
-|id_CidadeEntrega                        |INT       |--        |Chave estrangeira referente a CidadeEntrega - Faz referência a tabela: |
-|id_CidadeCalculo                        |INT       |--        |Chave estrangeira referente a CidadeCalculo - Faz referência a tabela: |
+|id_CidadeEntrega                        |INT       |--        |Chave estrangeira referente a CidadeEntrega - Faz referência a tabela: id_Cidade |
+|id_CidadeCalculo                        |INT       |--        |Chave estrangeira referente a CidadeCalculo - Faz referência a tabela: tbdCidade |
 |dt_Previsao                             |DATETIME  |--        |Data de Previsao|
 |ds_ContatoPrevisao                      |VARCHAR   |30        |Descrição do ContatoPrevisao|
 |cd_PeriodoEntrega                       |CHAR      |2         |Código/número PeriodoEntrega|
@@ -244,14 +242,14 @@
 |ds_ContatoConfirmacao                   |VARCHAR   |30        |Descrição do ContatoConfirmacao|
 |cd_Imposto                              |CHAR      |4         |Código/número Imposto|
 |cd_SerieCTRC                            |CHAR      |3         |Código/número SerieCTRC|
-|id_PreManifesto                         |INT       |--        |Chave estrangeira referente a PreManifesto - Faz referência a tabela: |
+|id_PreManifesto                         |INT       |--        |Chave estrangeira referente a PreManifesto - Faz referência a tabela: tbdPreManifesto |
 |tp_Localidade                           |CHAR      |1         |Tipo de Localidade|
 |qt_NotaFiscal                           |INT       |--        |Quantidade de NotaFiscal|
-|id_ManifestoTransferencia               |INT       |--        |Chave estrangeira referente a ManifestoTransferencia - Faz referência a tabela: |
+|id_ManifestoTransferencia               |INT       |--        |Chave estrangeira referente a ManifestoTransferencia - Faz referência a tabela: tbdManifesto |
 |tp_Manifestado                          |CHAR      |1         |Tipo de Manifestado|
 |dt_Ocorrencia                           |DATETIME  |--        |Data de Ocorrencia|
 |hr_Ocorrencia                           |CHAR      |5         |Hora Ocorrencia|
-|id_NaturezaMercadoria                   |INT       |--        |Chave estrangeira referente a NaturezaMercadoria - Faz referência a tabela: |
+|id_NaturezaMercadoria                   |INT       |--        |Chave estrangeira referente a NaturezaMercadoria - Faz referência a tabela: tbdNaturezaMercadoria |
 |tp_Averbado                             |CHAR      |1         |Tipo de Averbado|
 |pc_DescontoPedagio                      |DECIMAL   |16,4      |Porcentagem DescontoPedagio|
 |tp_EDI                                  |CHAR      |1         |Tipo de EDI|
@@ -281,9 +279,9 @@
 |tp_EDILupBar                            |CHAR      |1         |Tipo de EDILupBar|
 |tp_EnviarEDICTeNFsWalmart               |CHAR      |1         |Tipo de EnviarEDICTeNFsWalmart|
 |TP_ENVIAREDIPORTO                       |CHAR      |1         |Tipo de ENVIAREDIPORTO|
-|id_TabelaPrecoRedespacho                |INT       |--        |Chave estrangeira referente a TabelaPrecoRedespacho - Faz referência a tabela: |
-|id_TabelaPrecoAgenteEntrega             |INT       |--        |Chave estrangeira referente a TabelaPrecoAgenteEntrega - Faz referência a tabela: |
-|id_TabelaPrecoAgenteColeta              |INT       |--        |Chave estrangeira referente a TabelaPrecoAgenteColeta - Faz referência a tabela: |
+|id_TabelaPrecoRedespacho                |INT       |--        |Chave estrangeira referente a TabelaPrecoRedespacho - Faz referência a tabela: tbdTabelaPreco |
+|id_TabelaPrecoAgenteEntrega             |INT       |--        |Chave estrangeira referente a TabelaPrecoAgenteEntrega - Faz referência a tabela: tbdTabelaPreco |
+|id_TabelaPrecoAgenteColeta              |INT       |--        |Chave estrangeira referente a TabelaPrecoAgenteColeta - Faz referência a tabela: tbdTabelaPreco |
 |tp_AverbaATM                            |CHAR      |1         |Tipo de AverbaATM|
 |cm_Destinatario                         |VARCHAR   |500       |Comentário Destinatario|
 |TP_ENVIADOCONTABILIDADE                 |CHAR      |1         |Tipo de ENVIADOCONTABILIDADE|
@@ -298,9 +296,7 @@
 |tp_IntegradoClaroEnvioXML               |VARCHAR   |1         |Tipo de IntegradoClaroEnvioXML|
 |ds_UltimoRetornoClaroEnvioXML           |VARCHAR   |300       |Descrição do UltimoRetornoClaroEnvioXML|
 |dt_BaixaTitulo                          |DATETIME  |--        |Data de BaixaTitulo|
-|id_Bancario                             |INT       |--        |Chave estrangeira referente a Bancario - Faz referência a tabela: |
 |tp_AverbadoATMAereo                     |CHAR      |1         |Tipo de AverbadoATMAereo|
-|id_IntegracaoAgile                      |INT       |--        |Chave estrangeira referente a IntegracaoAgile - Faz referência a tabela: |
 |tp_EnviarAgile                          |VARCHAR   |1         |Tipo de EnviarAgile|
 |dt_UltimoEnvioAgile                     |DATETIME  |--        |Data de UltimoEnvioAgile|
 |vl_FreteRedespacho                      |DECIMAL   |9,0       |Valor de FreteRedespacho|
